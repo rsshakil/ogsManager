@@ -1,0 +1,13 @@
+.amount-input {
+    position: relative;
+}
+.amount-input::before {
+    position: absolute;
+    content: "¥";
+    top: 42px;
+    left: 10px;
+    z-index: 1;
+}
+input::placeholder{
+    text-align: left;
+}

@@ -1,0 +1,30 @@
+.toggle-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+.toggle-label {
+    @apply flex items-center cursor-pointer justify-around w-[100%] ml-0 text-white h-8 bg-orange-300 relative;
+    content: ''; 
+    letter-spacing: 4px;
+}
+.toggle-button {
+    color: #000000;
+    line-height: 28px;
+}
+.toggle-label .toggle-button {
+    @apply absolute w-[50%] bg-gray-100 text-center;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: margin-top 0.3s linear 2s;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.toggle-checkbox:checked + .toggle-label .toggle-button {
+    left: 100%;
+    transform: translateX(-100%);
+}
+.toggle-label:active .toggle-button {
+    width: 50%;
+}

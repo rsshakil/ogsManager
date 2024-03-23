@@ -1,0 +1,122 @@
+@page {
+  size: A4 portrait;
+  margin: 0mm;
+}
+@font-face {
+  font-family: 'Noto Color Emoji';
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+* {
+  margin: 0mm;
+  padding: 0mm;
+}
+
+.page {
+  width: 210mm; /* 用紙の横幅を改めて指定 */
+  height: 297mm; /* 高さには0.5mm余裕をもたせる */
+  page-break-after: always;
+  box-sizing: border-box;
+  padding: 5mm 5mm; /* 用紙の余白 */
+  font-size: 11pt;
+  /* border: solid; */
+  font-family: 'Zen Old Mincho','Noto Color Emoji', serif !important;
+ 
+}
+
+.container {
+  width: 764px;
+  height: 1119px;
+  padding: 0px;
+  right: 0px;
+  top: 0px;
+  z-index: 2;
+  position: absolute;
+}
+
+.canvascomponent {
+  width: 764px;
+  height: 1122px;
+  position: relative;
+}
+
+.arrowstamp {
+  margin-top: 15px;
+  margin-right: 0px;
+  width: 90px;
+  height: 90px;
+}
+
+.arrowlogo {
+  margin-top: 17px;
+  margin-left: 24px;
+  width: 300px;
+  height: 40px;
+}
+
+.address {
+  /* color: hsl(360, 100%, 100%); */
+  color: hsl(0, 0%, 100%);
+  /* color: device-cmyk(0 81% 81% 30%); */
+}
+
+.lightfont {
+  color: hsl(360, 0%, 43.9%);
+  /* color: hsl(0, 0%, 100%); */
+  /* color: device-cmyk(0% 0% 100% 40%) */
+  /* color: data-w3-color=cmyk(0% 0% 100% 40%); */
+}
+
+.remarks {
+  color: hsl(201, 89%, 48%);
+}
+
+.itemlist {
+  width: 750px;
+  /*height: 360px;*/
+  margin-bottom: 20px;
+}
+
+.customTopTitle2{
+  letter-spacing: -4px;
+  font-size: 42px;
+  margin-top: 10px;
+  width: 157px;
+}
+
+.customTopTitle{
+  letter-spacing: -4px;
+  font-size: 42px;
+  margin-top: 10px;
+}
+.dateTitle{
+  width: 157px;
+  margin-top: -10px;
+}
+.dateColWidth335{
+  width: 364px;
+}
+.laterSpacing{
+  letter-spacing: -2px;
+}
+.customRecieptTitle{
+    font-size: 42px;
+    margin-top: 24px;
+    letter-spacing: -2px;
+}
+.dateTitleReceipt{
+  position: absolute;
+  right: 70px;
+  top: 84px;
+}
+.marginRight6{
+  margin-right: 6px;
+}
+.top910{
+  top:910px;
+}
+.width230{width: 244px;}
+.customInvoiceTitle{
+  font-size: 42px;
+  margin-top: 24px;
+  letter-spacing: -5px;
+}

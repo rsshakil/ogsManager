@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&display=swap');
+
+body {
+  margin: 0;
+  min-height: 100% !important;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo",
+    "メイリオ", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #f1f1f1; */
+  background-color: #133483;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.required::after {
+  content: "必須";
+  /* background-color: #ec2323; */
+  background-color: #ff4b00;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: bold;
+  min-width: 10px;
+  padding: 4px 4px;
+  margin: 4px 5px;
+  line-height: 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.spinner_none {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+}
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.required-class>div>label>span {
+  display: none;
+}
+
+.menu2>div>table {
+  width: 100% !important;
+}
+
+.menu2>div>table>tbody tr td:nth-of-type(2) {
+  width: 16px !important;
+}
+
+div[aria-label="HeaderMenu1Modal"]>div,
+div[aria-label="HeaderMenu2Modal"]>div {
+  max-width: 640px;
+}
+
+.map-container {
+  width: "-webkit-fill-available";
+  height: "100%";
+}
+
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
+.contain {
+  /* background-size: contain; */
+  object-fit: contain;
+}
+
+.number {
+  text-align: center;
+}
+
+.currency {
+  position: relative;
+  text-align: right;
+}
+
+/*
+.currency::before {
+  content: "¥";
+  position: absolute;
+  left: 4px;
+}
+*/
+
+.right-shadow {
+  box-shadow: 1px 0 1px 0px #95a4b8;
+}
+
+/* //////////間宮追加/////////// */
+.fake-input img {
+  position: absolute;
+  top: 285px;
+  right: 25px;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* ピッカーの曜日色 */
+.react-datepicker__day-name:first-child,
+.react-datepicker__day:first-child,
+div.isHoliday {
+  color: #ff4b00;
+}
+
+.react-datepicker__day-name:last-child,
+.react-datepicker__day:last-child {
+  color: #26A0D3;
+}
+
+
+/* devExCustum 20230914*/
+tbody {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+
+}
+
+
+.dx-row.dx-data-row {
+  background-color: #074797;
+}
+
+.dragableinputArea .dx-row.dx-data-row {
+  background-color: #11529C;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.dx-scrollable-container {
+  background-color: #BFCFE5;
+}
+
+.dx-row-alt {
+  background-color: #005BAB !important;
+}
+
+.dx-datagrid-rowsview .dx-row>td {
+  background-color: inherit !important;
+}
+
+.dx-datagrid .dx-row-alt>td {
+  background-color: inherit !important;
+}
+
+.dx-datagrid-rowsview .dx-data-row.dx-state-hover {
+  background-color: #3682C2 !important;
+  color: #ffffff !important;
+}
+
+.dx-header-row {
+  background-color: #E01329 !important;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom-style: solid !important;
+  border-bottom-width: 4px !important;
+  border-bottom: #11529C;
+}
+
+.dx-datagrid-rowsview .dx-row,
+.dx-datagrid .dx-row-alt {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+#popupContainer .dx-overlay-content {
+  background-color: #11529C !important;
+  color: #ffffff;
+  border-color: #FACD42;
+  border-width: 2px;
+  border-radius: 16px;
+}
+
+.dx-popup-title {
+  border-color: #FACD42 !important;
+  border-bottom-width: 2px !important;
+  color: #ffffff !important;
+}
+
+.dx-icon-close::before {
+  color: #FFFFFF;
+}
+
+.dx-editor-container .dx-texteditor.dx-editor-outlined {
+  border-radius: unset;
+}
+
+#gridContainer .dx-datagrid-headers table tbody tr td {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
+#gridContainer .dx-datagrid-rowsview table tbody tr td {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+#gridContainer tr.dx-row.dx-column-lines.dx-group-row {
+  background: #133483 !important;
+  color: #fff !important;
+}
+
+.modal-button {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(255 255 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: #FACD42;
+  position: absolute;
+  bottom: 15px;
+  width: 94.5%;
+  z-index: 9999;
+}
+
+.modal-button:hover,
+.modal-button-custom:hover
+ {
+  background-color: #FFDB60 !important;
+  color: black !important;
+}
+
+.modal-button:disabled,
+.modal-button-custom:disabled {
+  background-color: #D5D5D5 !important;
+}
+.modal-button-note {
+  position: absolute;
+  bottom: 70px;
+  width: 94.5%;
+  z-index: 9999;
+}
+
+.devExtreameDateTimePicker {
+  width: 100% !important;
+}
+
+.devExtreameDateTimePicker .dx-dropdowneditor-icon,
+.devExtreameDateTimePicker .dx-show-clear-button .dx-icon-clear {
+  color: rgb(138 173 198 / var(--tw-text-opacity));
+}
+
+.dateBoxSeparator {
+  line-height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dx-scrollable-scroll-content {
+  background: #fff !important;
+}
+
+.drabgleLabel {
+  position: absolute;
+  top: 0;
+}
+
+.customDragAbleInput {
+  margin-top: 20px;
+  z-index: 1;
+}
+
+/* Settings list page */
+#settingsListWrapper {
+  height: 100%;
+}
+
+#settingsListWrapper #gridContainer .dx-datagrid-headers {
+  display: none;
+}
+
+#settingsListWrapper #gridContainer .dx-datagrid-rowsview {
+  border-top: 3px solid rgb(255 255 255/var(--tw-border-opacity));
+}
+
+#settingsListWrapper .dx-pager {
+  display: none;
+}
+
+#contentWrap:has(#settingsListWrapper) {
+  height: calc(100vh - 145px) !important;
+}
+
+.dx-tag-remove-button-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 100%;
+}
+
+.dx-tag-remove-button-custom::after,
+.dx-tag-remove-button-custom::before {
+  position: absolute;
+  top: 50%;
+  content: "";
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 9px;
+  margin-top: -5px;
+  width: 3px;
+  height: 11px;
+  background: #aaa;
+}
+
+.dx-tag-remove-button-custom::after {
+  right: 5px;
+  margin-top: -1px;
+  width: 11px;
+  height: 3px;
+}
+
+
+/*My customTagboxV2 start */
+.toggle {
+  cursor: pointer;
+}
+
+.list {
+  display: none;
+}
+
+.dx-scrollable-content .dx-item-custom:hover {
+  background-color: #e0e0e0;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.search-box input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.custom-tagbox-list .tab {
+  border-radius: 4px;
+  color: #333;
+  padding: 8px 12px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background: #fff;
+}
+.custom-tagbox-list button {
+  cursor: pointer;
+}
+
+/* Hover effect */
+.custom-tagbox-list .tab:hover {
+  background-color: #ddd;
+}
+
+/* Active state */
+.custom-tagbox-list .tab .active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/*My customTagboxV2 end */
+.dx-popup-content.dx-popup-content-scrollable:has(.gacha-status-incomplete) {
+  height: calc(100vh - 250px) !important;
+}
+.gacha-status-incomplete .gachaTableWrapper .editable-table {
+  height: calc(100vh - 365px) !important;
+}
+.scenario-calculation-button {
+  position: relative;
+  z-index: 9999;
+}
+.modal-button1, .modal-button2, .modal-button3 {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(255 255 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: #FACD42;
+  position: absolute;
+  width: 94.5%;
+  z-index: 9999;
+}
+.modal-button1 {
+  bottom: 95px;
+}
+.modal-button2 {
+  bottom: 50px;
+}
+.modal-button3 {
+  bottom: 5px;
+}
+
+.modal-button2:hover,
+.modal-button1:hover {
+  background-color: #FFDB60;
+  color: black;
+}
+
+.modal-button2:disabled,
+.modal-button1:disabled {
+  background-color: #D5D5D5 !important;
+}
+
+#gridContainer {
+  max-width: 100% !important;
+  min-height: 312px;
+}
+
+.page960-body {
+  background-color: rgb(255, 255, 255);
+  width: 960px;
+  padding: 2rem 4rem;
+}
+
+.form-error {
+  color: rgb(255, 75, 0);
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  text-align: right;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 38px);
+  justify-content: center;
+  overflow-x: auto;
+  position: relative;
+  top: 0px;
+}
+
+.eyeStyle {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0/var(--tw-text-opacity));
+  cursor: pointer;
+  display: flex;
+  height: 1rem;
+  margin-left: -28px;
+  margin-right: 8px;
+  margin-top: 12px;
+  vertical-align: middle;
+  width: 1rem;
+}
+
+.user-edit-form{
+  max-height: 312px;
+}
+
+.single-data-row-form .dx-gridbase-container .dx-datagrid-rowsview{
+  min-height:40px !important
+}
+.single-data-row-form{
+  max-height: 80px;
+  min-height: 80px !important;
+}
+
+/* blink */
+
+.blink-red {
+  animation: blink-red 1s 0s ease 1;
+  -moz-animation: blink-red 1s 0s ease 1;
+  /* Firefox */
+  -webkit-animation: blink-red 1s 0s ease 1;
+  /* Safari and Chrome */
+  -o-animation: blink-red 1s 0s ease 1;
+  /* Opera */
+}
+.modalOpen .blink-red {
+  animation: none;
+}
+@keyframes blink-red {
+  0%,
+  100% {
+  text-shadow: 
+  -.1vw 0vw .1vw #FED128, -.15vw 0vw .2vw #FED128, -.2vw 0vw .2vw #FED128, 
+  -.1vw 0vw 3vw #F0130B, -.2vw 0vw 3vw #F0130B, -.4vw 0vw 3vw #F0130B,
+  -.1vw 0vw 5vw #F0130B, -.2vw 0vw 5vw #F0130B, -.4vw 0vw .8vw #F0130B, .2vw 0vw 10vw #F0130B;
+    color: #FED128;
+  }
+  50% {
+  text-shadow: 
+  -.1vw 0vw .1vw #705C12, -.15vw 0vw .2vw #705C12, -.2vw 0vw .2vw #705C12, 
+  -.1vw 0vw .1vw #5C0704, -.2vw 0vw .1vw #5C0704, -.4vw 0vw .1vw #5C0704,
+  -.1vw 0vw .2vw #5C0704, -.2vw 0vw .2vw #5C0704, -.4vw 0vw .2vw #5C0704, .2vw 0vw .5vw #5C0704;
+    color: #705C12;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    /* background-color: #FFDB60;
+    box-shadow: 0 0 5px #FFDB60; */
+    filter: brightness(150%);
+  }
+  
+  100% {
+    /* background-color: #c9a019;
+    box-shadow: 0 0 5px #c9a019; */
+    /* filter: contrast(100%) brightness(50%); */
+  }
+}
+.flushGrowingButton {
+  animation: glowing;
+  animation-duration: 1300ms;
+  animation-delay: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.invalidDateValue{
+  opacity: 0;
+}
+
+.commnButtonAreaPosition{
+  position: absolute;
+  bottom: 5px;
+  z-index: 9999;
+}
+.commnButtonStyle {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(255 255 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: #FACD42;
+  z-index: 9999;
+  width: 100%;
+  cursor: pointer;
+}
+
+.commnButtonStyle:hover {
+  background-color: #FFDB60 !important;
+  color: black !important;
+}
+
+.commnButtonStyle:disabled {
+  background-color: #D5D5D5 !important;
+}
+.customSelectField{
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.customSelectField:disabled{
+  background: transparent !important;
+}
+.customSelectField:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.modal-button-custom {
+  border-radius: 0.75rem;
+  border-width: 2px;
+  border-color: rgb(255 255 255);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  background-color: #FACD42;
+  position: absolute;
+  bottom: 15px;
+  width: 96.5%;
+  z-index: 9999;
+}
+/* 
+.dx-popup-content.dx-popup-content-scrollable {
+  height: calc(100% - 250px) !important;
+} */
+
+/* Modified cell border removed start */
+.ipBlockPatternListTable .dx-cell-modified::after {
+  border: 0 !important;
+}
+/* Modified cell border removed end */
+
+.customCheckBox .dx-datagrid-checkbox-size .dx-checkbox-icon{
+  width: 22px;
+  height: 22px;
+}
+
+.customCheckBox .dx-datagrid-checkbox-size.dx-checkbox-checked .dx-checkbox-icon{
+  font-size: 16px;
+}
+.customCheckBox .dx-datagrid-checkbox-size.dx-checkbox-indeterminate .dx-checkbox-icon{
+  font-size: 0px;
+}

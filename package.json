@@ -1,0 +1,91 @@
+{
+  "name": "ogsManager",
+  "version": "0.1.0002",
+  "private": true,
+  "license": "UNLICENSED",
+  "homepage": "https://manager-develop.oripa-ogs.com",
+  "dependencies": {
+    "@aws-amplify/ui-react": "^2.19.0",
+    "@craco/craco": "^7.0.0",
+    "@emotion/babel-preset-css-prop": "^11.10.0",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.3",
+    "@react-google-maps/api": "2.12.0",
+    "@react-google-maps/infobox": "^2.11.8",
+    "@reduxjs/toolkit": "^1.9.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/async-lock": "^1.1.5",
+    "async-lock": "^1.3.2",
+    "aws": "^0.0.3-2",
+    "aws-amplify": "^4.3.24",
+    "aws-sdk": "^2.1488.0",
+    "date-fns": "^2.30.0",
+    "devextreme": "^23.1.5",
+    "devextreme-react": "^23.1.5",
+    "eslint-loader": "^4.0.2",
+    "exceljs": "^4.4.0",
+    "file-saver": "^2.0.5",
+    "formik": "^2.2.9",
+    "google-maps-react": "^2.0.6",
+    "html-react-parser": "^3.0.4",
+    "install": "^0.13.0",
+    "js-base64": "^3.7.4",
+    "node-ipinfo": "^3.1.1",
+    "node-rsa": "^1.1.1",
+    "pako": "^2.1.0",
+    "pure-react-carousel": "^1.30.1",
+    "react": "^18.2.0",
+    "react-datepicker": "^4.12.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-intl": "^6.0.4",
+    "react-mobile-datepicker": "^4.0.2",
+    "react-modal": "^3.16.1",
+    "react-number-format": "^5.2.2",
+    "react-redux": "^8.0.2",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "^5.0.1",
+    "react-spinners": "^0.13.4",
+    "recoil": "^0.7.7",
+    "recoil-persist": "^4.2.0",
+    "spark-md5": "^3.0.2",
+    "substr": "^0.0.7",
+    "typescript": "^4.7.3",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "[ -e .env ] && react-scripts start || echo 'Error: .env file not found. Please run: cp .env.branch-name .env'",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css --minify"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.6",
+    "devextreme-themebuilder": "^23.1.3",
+    "tailwindcss": "^3.3.3"
+  }
+}
